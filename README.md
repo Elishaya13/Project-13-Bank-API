@@ -32,6 +32,15 @@ mongo --version
 # Install dependencies
 npm install
 
+# Launch mongodb with brew
+brew services start mongodb-community@6.0
+
+# To stop it 
+brew services stop mongodb-community@6.0
+
+# Switch back end version with nvm use (add .nvmrc file v12)
+nvm use
+
 # Start local dev server
 npm run dev:server
 
@@ -39,7 +48,8 @@ npm run dev:server
 npm run populate-db
 ```
 
-Your server should now be running at http://locahost:3001 and you will now have two users in your MongoDB database!
+
+Your server should now be running at http://localhost:3001 and you will now have two users in your MongoDB database!
 
 ## Populated Database Data
 
